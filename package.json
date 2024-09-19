@@ -11,6 +11,7 @@
   "license": "",
   "description": "Design Championship 2024 project submission",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "vercel": "^37.4.2"
   }
 }
