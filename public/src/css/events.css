@@ -1,0 +1,101 @@
+.spContainer {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5vw 0;
+}
+.spContainer .spCard {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  margin: 2vw 0px;
+  border-radius: 20px;
+  background-color: #212121;
+  box-shadow: 0px 0px 10px black;
+}
+.spContainer .spCard:hover .spDets {
+  top: 0%;
+  opacity: 1;
+  font-size: 2vw;
+}
+.spContainer .spCard img {
+  width: 100%;
+}
+.spContainer .spCard .spDets {
+  padding: 0.4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  font-size: 1.2vw;
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  opacity: 0;
+  background-color: rgba(198, 198, 198, 0.303);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: 0.5s;
+  z-index: 1;
+}
+.spContainer .spCard .spDets .gl i {
+  color: gold;
+}
+.spContainer .spCard .spDets .sl i {
+  color: silver;
+}
+.spContainer .spCard .spDets .br i {
+  color: rgb(149, 107, 0);
+}
+.spContainer .spCard .spDets i {
+  text-shadow: 0px 0px 6px black;
+}
+.spContainer .spCard .spDets div {
+  text-shadow: 0px 0px 3px black;
+}
+.spContainer .spCard .spTitle {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.head {
+  text-align: center;
+  font-size: 4vw;
+  margin-top: 4vw;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: normal;
+}
+.head::after {
+  height: 0.3vw;
+}
+
+.unCard {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 20px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px black;
+}
+
+.unName {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.unSp,
+.unSt {
+  margin-top: 8px;
+}
+
+.unSt:not(b) {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=events.css.map */

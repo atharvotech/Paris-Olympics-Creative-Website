@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 1.8vw;
+  line-height: 1.8vw;
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #111;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  padding: 0.3vw 1vw;
+  display: flex;
+  transform: translate(0);
+  z-index: 20;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  display: flex;
+  height: 1.8vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .logo img {
+  height: 100%;
+}
+nav .logo a {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: txt 20s infinite linear;
+  animation-play-state: paused;
+  position: relative;
+  transform: translateX(0);
+  z-index: 2;
+  line-height: 1.75vw;
+}
+nav .logo a::before {
+  content: "Paris Olympics-2024";
+  position: absolute;
+  z-index: 1;
+  inset: 0px;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  filter: blur(0.3vw);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: txt 12s infinite linear;
+  animation-play-state: paused;
+  transition: 0.5s;
+}
+nav .logo a:hover {
+  animation-play-state: running;
+}
+nav .logo a:hover::before {
+  animation-play-state: running;
+  filter: blur(0.7vw);
+}
+nav ul {
+  left: 0px;
+  top: 0%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  transition: 1s;
+  overflow: hidden;
+  transform: translate(0);
+  z-index: 20;
+}
+nav ul .close {
+  display: block;
+  width: -moz-min-content;
+  width: min-content;
+  position: absolute;
+  top: 0.3vw;
+  z-index: 2;
+  right: 1vw;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+nav ul .close:hover {
+  opacity: 1;
+  text-shadow: 0px 0px 0.5vw #fff;
+}
+nav ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8vw;
+  opacity: 0.8;
+}
+nav ul li.active {
+  opacity: 1;
+  text-shadow: 0px 0px 0.5vw #dadada;
+  background-color: rgb(6, 6, 6);
+}
+nav ul li:hover {
+  opacity: 1;
+  background-color: rgb(6, 6, 6);
+  text-shadow: 0px 0px 0.5vw #dadada;
+}
+nav ul li a {
+  display: block;
+  width: 100%;
+  line-height: 1.8vw;
+  padding: 0.8vw 0px;
+  color: #fff;
+  text-decoration: none;
+}
+nav .menu {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+nav .menu:hover {
+  opacity: 1;
+  text-shadow: 0px 0px 0.5vw #fff;
+}
+
+#main {
+  margin-top: 2.4vw;
+  padding-bottom: 2.4vw;
+}
+
+footer {
+  background-color: #171717;
+  padding: 0px 1vw;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0;
+}
+footer .logo img {
+  height: 9vw;
+}
+footer .logo .cn {
+  cursor: default;
+  font-size: 7.8vw;
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: txt 10s infinite linear;
+  position: relative;
+  transform: translateX(0);
+  z-index: 2;
+  line-height: 1.2;
+}
+footer .logo .cn::before {
+  content: "Paris Olympics - 2024";
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  background-color: black;
+  filter: blur(0.2vw);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: txt 10s infinite linear;
+  transition: 0.5s;
+}
+footer .logo .cn:hover::before {
+  filter: blur(0.5vw);
+}
+footer .cred {
+  display: flex;
+  justify-content: space-between;
+}
+footer .cred a {
+  position: relative;
+}
+footer .cred a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 0.1vw;
+  background-color: #fff;
+  transition: 0.5s;
+}
+footer .cred a:hover {
+  text-shadow: 0px 0px 0.7vw #cfcfcf;
+  color: #fff;
+}
+footer .cred a:hover::before {
+  width: 100%;
+}
+footer .cred .flink {
+  display: flex;
+  gap: 0.8vw;
+}
+footer .cred .z {
+  color: #fff;
+  background-color: red;
+  opacity: 1;
+}
+footer span,
+footer .connect {
+  font-size: 1.2vw;
+  overflow: hidden;
+  cursor: default;
+  color: rgb(182, 178, 191);
+}
+footer i {
+  display: inline;
+  font-size: 1.2vw;
+  cursor: pointer;
+  color: rgb(182, 178, 191);
+  background-color: #111;
+  padding: 0.4vw;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+footer i:hover {
+  background-color: black;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.copy {
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+}
+.copy:hover {
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  box-shadow: 0px 0px 20px 8px rgb(0, 0, 0);
+  border-radius: 1.5vw;
+  background-color: #282828;
+  color: #000;
+  padding: 13px;
+  display: none;
+  overflow: hidden;
+}
+
+.modal .close {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border-radius: 50%;
+  font-size: 2vw;
+  cursor: pointer;
+  height: 2.1vw;
+  width: 2.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0);
+  z-index: 10;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+}
+
+.modal .mdata {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.modal .mhead {
+  font-size: 2.3vw;
+  text-align: center;
+}
+
+@keyframes txt {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position: 400vw;
+  }
+}
+.line {
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+  width: 100%;
+  margin: 2vw 0;
+}
+
+.title {
+  width: -moz-min-content;
+  width: min-content;
+  text-align: center;
+  margin: auto;
+  font-size: 7vw;
+  font-family: "Protest Guerrilla", sans-serif;
+  text-transform: uppercase;
+  font-size: 7.8vw;
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: txt 20s infinite linear;
+  position: relative;
+  transform: translateX(0);
+  z-index: 2;
+  line-height: 1.2;
+  animation: txt 2s linear;
+  line-height: 8vw;
+}
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  background-color: black;
+  filter: blur(0.1vw);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: txt 20s infinite linear;
+  transition: 0.5s;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  animation: txt 20s infinite linear;
+  transition: 0.5s;
+}
+.title:hover::before {
+  filter: blur(0.5vw);
+}
+
+.titles {
+  width: -moz-min-content;
+  width: min-content;
+  display: flex;
+  margin: auto;
+  position: relative;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  overflow: hidden;
+  animation: txt 30s infinite linear;
+}
+.titles span {
+  font-family: "Protest Guerrilla", sans-serif;
+  text-transform: uppercase;
+  font-size: 7.8vw;
+  line-height: 8vw;
+  display: block;
+}
+.titles::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  animation: txt 20s infinite linear;
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */

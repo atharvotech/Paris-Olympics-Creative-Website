@@ -1,0 +1,256 @@
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.hero-container .hero-imgs {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+.hero-container .hero-imgs img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.wrap {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  cursor: pointer;
+}
+
+.wrap-cover {
+  transform: translate(0);
+  z-index: 10;
+  margin-bottom: 2.4vw;
+}
+
+.slogan {
+  font-size: 2.5vw;
+  font-family: "Monotype Corsiva";
+  line-height: 3vw;
+  padding: 0 10%;
+  margin-top: 2.5vw;
+  position: relative;
+  margin-bottom: 4vw;
+}
+
+.sports {
+  margin-top: 3vw;
+}
+.sports p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 2vw;
+  margin-top: 1vw;
+  padding: 0.1vw 7vw;
+  letter-spacing: 0.1vw;
+}
+.sports ul {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: 0.1vw 7vw;
+}
+.sports .head {
+  font-family: "Lucida calligraphy";
+  font-size: 2.5vw;
+  margin: 0 5vw;
+  margin-top: 4vw;
+}
+.sports .spContainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4vw 0vw;
+  margin: 0 5vw;
+}
+.sports .spContainer .spCard {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #212121;
+  box-shadow: 0px 0px 10px black;
+}
+.sports .spContainer .spCard:hover .spDets {
+  top: 0%;
+  opacity: 1;
+  font-size: 2vw;
+}
+.sports .spContainer .spCard img {
+  width: 100%;
+}
+.sports .spContainer .spCard .spDets {
+  padding: 0.4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  font-size: 1.2vw;
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  opacity: 0;
+  background-color: rgba(198, 198, 198, 0.303);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: 0.5s;
+  z-index: 1;
+}
+.sports .spContainer .spCard .spDets .gl i {
+  color: gold;
+}
+.sports .spContainer .spCard .spDets .sl i {
+  color: silver;
+}
+.sports .spContainer .spCard .spDets .br i {
+  color: rgb(149, 107, 0);
+}
+.sports .spContainer .spCard .spDets i {
+  text-shadow: 0px 0px 6px black;
+}
+.sports .spContainer .spCard .spDets div {
+  text-shadow: 0px 0px 3px black;
+}
+.sports .spContainer .spCard .spTitle {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.lm-btn {
+  width: -moz-min-content;
+  width: min-content;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 1.5vw;
+  border-radius: 3.5vw;
+  box-shadow: 0px 0px 10px black;
+  line-height: 1;
+  margin: auto;
+}
+.lm-btn .lm a {
+  background-color: #fff;
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+  animation: txt 30s infinite linear;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  transform: translateX(0);
+  z-index: 2;
+  animation: txt 20s linear;
+  animation-play-state: paused;
+  margin: auto;
+  font-size: 1.7vw;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  line-height: 1.5 !important;
+  line-height: 8vw;
+}
+.lm-btn .lm a:hover {
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+.athletes {
+  margin-top: 3vw;
+}
+.athletes h1 {
+  text-align: center;
+  margin-top: 2.5vw;
+  font-size: 2.5vw;
+}
+.athletes p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 2vw;
+  margin-top: 1vw;
+  padding: 0.1vw 7vw;
+  letter-spacing: 0.1vw;
+}
+.athletes ul {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: 0.1vw 7vw;
+}
+.athletes .athContainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4vw 0vw;
+  margin: 0 5vw;
+}
+.athletes .athContainer .athCard {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #212121;
+  box-shadow: 0px 0px 10px black;
+}
+.athletes .athContainer .athCard:hover .athDets {
+  top: 0%;
+  opacity: 1;
+}
+.athletes .athContainer .athCard img {
+  width: 100%;
+}
+.athletes .athContainer .athCard .athDets {
+  padding: 0.4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  font-size: 1.2vw;
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  opacity: 0;
+  background-color: rgba(198, 198, 198, 0.303);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: 0.5s;
+  z-index: 1;
+}
+.athletes .athContainer .athCard .athDets .gl i {
+  color: gold;
+}
+.athletes .athContainer .athCard .athDets .sl i {
+  color: silver;
+}
+.athletes .athContainer .athCard .athDets .br i {
+  color: rgb(149, 107, 0);
+}
+.athletes .athContainer .athCard .athDets i {
+  text-shadow: 0px 0px 6px black;
+}
+.athletes .athContainer .athCard .athDets div {
+  text-shadow: 0px 0px 3px black;
+}
+.athletes .athContainer .athCard .athName {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}/*# sourceMappingURL=home.css.map */

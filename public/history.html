@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <!-- loder -->
+    <link rel="stylesheet" href="css/load.css">
+    <script src="./js/load.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- libs -->
+    <link rel="stylesheet" href="./libs/shery.css">
+    <link rel="stylesheet" href="./libs/locomotive.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- boilerplate style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- home style -->
+
+    <style>
+        .head h1 {
+            background: #1f1f1f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1,
+        h2 {
+            color: #ffcc00;
+        }
+
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .container ul li {
+            background: #333;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container ul li:nth-child(odd) {
+            background: #444;
+        }
+
+        .container a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="topheading">
+            <h5 class="reveal">Design Chaimpionship</h5>
+            <h5 class="reveal">&copy; 2024</h5>
+        </div>
+
+        <h1 class="reveal"><span>Paris </span> <span>Olympics </span> <span>2024 </span> </h1>
+        <div id="green"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo mask navcl">
+                <img src="./favicon.ico" alt="" srcset="">
+                <a href="/">Paris Olympics-2024</a>
+            </div>
+            <div class="menu disp navcl" onclick="navtl.play()"><i class="ri-menu-2-line"></i>Menu</div>
+            <ul>
+                <div class="close disp" onclick="navtl.reverse()"><i class="ri-close-large-line"></i>Close</div>
+                <li class="disp"><a href="/">Home</a></li>
+                <li class="disp"><a href="/events">Events</a></li>
+                <li class="disp"><a href="/athletes">Athlete Profiles</a></li>
+                <li class="disp"><a href="/medals">Medals</a></li>
+                <li class="active disp"><a href="">History</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main" onclick="navtl.reverse()" data-scroll-container style="padding-bottom: 4.2vw;">
+        <div class="head">
+            <h1 class="titles" style="width: max-content;">Olympics History</h1>
+        </div>
+        <div class="container">
+            <p>The modern Olympic Games started in <strong>1896</strong>.</p>
+            <p>The first modern Olympics were held in <strong>Athens, Greece</strong>.</p>
+            <p>The first Olympic champion was <strong>James Connolly</strong> from the USA, who won the triple jump
+                event.</p>
+
+            <h2>Highlights of the First Modern Olympics</h2>
+            <ul>
+                <li>Dates: April 6 to April 15, 1896</li>
+                <li>Number of Nations: 14</li>
+                <li>Number of head: 241</li>
+                <li>Number of Events: 43</li>
+            </ul>
+
+            <h2>Notable Winners</h2>
+            <p>Some of the notable winners of the first modern Olympics include:</p>
+            <ul>
+                <li><strong>Spyridon Louis</strong> (Greece) - Marathon</li>
+                <li><strong>Thomas Burke</strong> (USA) - 100 meters and 400 meters</li>
+                <li><strong>Alfréd Hajós</strong> (Hungary) - Swimming (100 meters and 1200 meters freestyle)</li>
+            </ul>
+
+            <h2>Interesting Facts</h2>
+            <p>Here are some interesting facts about the first modern Olympics:</p>
+            <ul>
+                <li>The games were held in the Panathenaic Stadium, which was originally built in 330 BC and refurbished
+                    for the
+                    1896 Olympics.</li>
+                <li>Women were not allowed to compete in the first modern Olympics.</li>
+                <li>The marathon was inspired by the ancient Greek soldier Pheidippides, who ran from the battlefield of
+                    Marathon to Athens to announce the Greek victory over the Persians.</li>
+            </ul>
+        </div>
+        <footer>
+            <div class="lnc">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="">
+                    <div class="cn">Paris Olympics - 2024</div>
+                </div>
+                <div class="connect">
+                    Connect:
+                    <i class="ri-facebook-fill disp"></i>
+                    <i class="ri-instagram-line disp"></i>
+                </div>
+            </div>
+            <div class="cred">
+                <span class="">Designed By Atharv Shukla ,Dark Coders</span>
+                <span class="flink">
+                    <span><a href="" class="disp">Documentation</a></span>
+                    <span><a href="" class="disp">Google Drive</a></span>
+                </span>
+            </div>
+            <div class="copy mask" onclick="mtl.play()">
+                &copy; 2024 Paris Olympics. All rights reserved. Disclamer
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="modal">
+        <div class="modal-content"></div>
+        <span class="close" onclick="mtl.reverse()">&times;</span>
+        <div class="mhead one">Copyright Credits</div>
+        <div class="mdata">Image Source:
+            <a href="https://olympics.com/">Olympics Official</a>
+        </div>
+
+        <div class="mdata">article:
+            <a href="https://wikipedia.com/">wikipedia</a>
+        </div>
+
+        <div class="mhead two">
+            ⚠️ Disclamer
+        </div>
+        <p>This website is for educational purposes only. This website provided is not official and may not reflect
+            the
+            actual outcome of the Paris 2024 Olympics.</p>
+    </div>
+    <!-- gsap -->
+    <script src="./libs/gsap.min.js"></script>
+    <!-- libs -->
+    <script src="./libs/locomotive-scroll.min.js"></script>
+    <script src="./libs/scrollTrigger.min.js"></script>
+    <script src="./libs/three.min.js"></script>
+    <script src="./libs/tilt.min.js"></script>
+    <script src="./libs/controlKit.min.js"></script>
+    <script src="./libs/shery.min.js"></script>
+
+    <!-- Default Script -->
+    <script src="./js/script.js"></script>
+    <!-- evnets Script -->
+    <script>
+        function cusAnim() {
+            function breakText(e) {
+                let sp = document.querySelector(e)
+                let h1txt = sp.innerText
+
+                let splittedText = h1txt.split('');
+                let halfValue = splittedText.length / 2
+
+                let clutter = ""
+
+                splittedText.forEach((e, i) => {
+                    console.log(e, i);
+                    if (e == " ") {
+                        e = '&nbsp;'
+                    }
+
+                    if (i < halfValue) {
+                        clutter += `<span class="a">${e}</span>`
+                    }
+                    else {
+                        clutter += `<span class="b">${e}</span>`
+                    }
+                });
+
+                sp.innerHTML = clutter
+            }
+            atT = document.querySelector('.head .titles')
+            breakText('.head .titles')
+
+            loadtl.from('.head .titles', {
+                scaleX: 0,
+            });
+
+            loadtl.from(atT.querySelectorAll('.a'), {
+                y: "100%",
+                opacity: 0,
+                duration: .6,
+                stagger: 0.15,
+            }, 'gp')
+
+            loadtl.from(atT.querySelectorAll('.b'), {
+                y: "100%",
+                opacity: 0,
+                duration: .6,
+                stagger: -0.15,
+            }, 'gp')
+
+            loadtl.from('.container', {
+                borderRadius: '100%',
+                scale: 0,
+                duration: 1.2,
+                ease: Power2.easeInOut,
+                opacity: 0,
+
+                // ease:Circ.easeInOut,
+            })
+        }
+    </script>
+</body>
+
+</html>

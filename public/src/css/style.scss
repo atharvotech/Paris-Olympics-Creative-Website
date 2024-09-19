@@ -1,0 +1,481 @@
+@import "var";
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: $txtcolor;
+    font-size: 1.8vw;
+    line-height: 1.8vw;
+    cursor: default;
+}
+
+a {
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: $bgcolor;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    padding: .3vw 1vw;
+    display: flex;
+    transform: translate(0);
+    z-index: 20;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        height: 1.8vw;
+        object-fit: contain;
+
+        img {
+            height: 100%;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+            color: transparent;
+            background-clip: text;
+            animation: txt 20s infinite linear;
+            animation-play-state: paused;
+            position: relative;
+            transform: translateX(0);
+            z-index: 2;
+            line-height: 1.75vw;
+
+            // font-weight: 600;
+            &::before {
+
+                content: 'Paris Olympics-2024';
+                position: absolute;
+                z-index: 1;
+                inset: 0px;
+                background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+                filter: blur(.3vw);
+                color: transparent;
+                background-clip: text;
+                animation: txt 12s infinite linear;
+                animation-play-state: paused;
+                transition: .5s;
+            }
+
+            &:hover {
+                animation-play-state: running;
+
+                &::before {
+                    animation-play-state: running;
+                    filter: blur(.7vw);
+                }
+            }
+        }
+    }
+
+
+    ul {
+        .close {
+            display: block;
+            width: min-content;
+            position: absolute;
+            top: .3vw;
+            z-index: 2;
+            right: 1vw;
+
+            cursor: pointer;
+            opacity: .8;
+            transition: .5s;
+
+            &:hover {
+                opacity: 1;
+                text-shadow: 0px 0px .5vw #fff;
+            }
+        }
+
+        left: 0px;
+        top: 0%;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        transition: 1s;
+        overflow: hidden;
+        transform: translate(0);
+        z-index: 20;
+
+        li {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 1.8vw;
+            opacity: .8;
+
+
+            &.active {
+                opacity: 1;
+                text-shadow: 0px 0px .5vw #dadada;
+                background-color: rgb(6, 6, 6);
+            }
+
+            &:hover {
+                opacity: 1;
+                background-color: rgb(6, 6, 6);
+                text-shadow: 0px 0px .5vw #dadada;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                // background-color: red;
+                line-height: 1.8vw;
+                padding: .8vw 0px;
+                color: $txtcolor;
+                text-decoration: none;
+            }
+        }
+
+
+    }
+
+    .menu {
+        cursor: pointer;
+        opacity: .8;
+        transition: .5s;
+
+        &:hover {
+            opacity: 1;
+            text-shadow: 0px 0px .5vw #fff;
+        }
+    }
+}
+
+#main {
+    margin-top: 2.4vw;
+    padding-bottom: 2.4vw;
+}
+
+footer {
+    background-color: #171717;
+    padding: 0px 1vw;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw 0;
+
+        img {
+            height: 9vw;
+        }
+
+        .cn {
+            cursor: default;
+            font-size: 7.8vw;
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+            color: transparent;
+            background-clip: text;
+            animation: txt 10s infinite linear;
+            position: relative;
+            transform: translateX(0);
+            z-index: 2;
+            line-height: 1.2;
+
+            // font-weight: 600;
+            &::before {
+                content: 'Paris Olympics - 2024';
+                position: absolute;
+                z-index: -1;
+                inset: 0px;
+                background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+                background-color: black;
+                filter: blur(.2vw);
+                color: transparent;
+                background-clip: text;
+                animation: txt 10s infinite linear;
+                // animation-play-state: paused;
+                transition: .5s;
+            }
+
+            &:hover {
+                // animation-play-state: running;
+
+                &::before {
+                    // animation-play-state: running;
+                    filter: blur(.5vw);
+                }
+            }
+        }
+    }
+
+    .cred {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 0%;
+                height: .1vw;
+                background-color: #fff;
+                transition: .5s;
+            }
+
+            &:hover {
+                text-shadow: 0px 0px .7vw #cfcfcf;
+                color: #fff;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .flink {
+            display: flex;
+            gap: .8vw;
+        }
+
+        .z {
+            color: #fff;
+            background-color: red;
+            opacity: 1;
+        }
+    }
+
+    span,
+    .connect {
+        font-size: 1.2vw;
+        overflow: hidden;
+        // opacity: .75;
+        cursor: default;
+        color: rgb(182, 178, 191);
+    }
+
+    i {
+        display: inline;
+        font-size: 1.2vw;
+        cursor: pointer;
+        color: rgb(182, 178, 191);
+        background-color: #111;
+        padding: .4vw;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            // scale: 2;
+            background-color: black;
+            color: #fff;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.copy {
+    cursor: pointer;
+    text-align: center;
+    opacity: .6;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.modal {
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    box-shadow: 0px 0px 20px 8px rgb(0, 0, 0);
+    border-radius: 1.5vw;
+    background-color: #282828;
+    color: #000;
+
+    padding: 13px;
+    display: none;
+    overflow: hidden;
+}
+
+.modal .close {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    border-radius: 50%;
+    font-size: 2vw;
+    cursor: pointer;
+    height: 2.1vw;
+    width: 2.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0);
+    z-index: 10;
+
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+}
+
+.modal .mdata {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal .mhead {
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+@keyframes txt {
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position: 400vw;
+    }
+}
+
+//utility classes
+
+.line {
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    width: 100%;
+    margin: 2vw 0;
+}
+
+.title {
+    width: min-content;
+    text-align: center;
+    margin: auto;
+    font-size: 7vw;
+    font-family: "Protest Guerrilla", sans-serif;
+    text-transform: uppercase;
+
+    // color: blackcursor: default;
+    font-size: 7.8vw;
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+    // background: white;
+    color: transparent;
+    background-clip: text;
+    animation: txt 20s infinite linear;
+    position: relative;
+    transform: translateX(0);
+    z-index: 2;
+    line-height: 1.2;
+
+    // font-weight: 600;
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        z-index: -1;
+        inset: 0px;
+        background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+        background-color: black;
+        filter: blur(.1vw);
+        color: transparent;
+        background-clip: text;
+        animation: txt 20s infinite linear;
+        // animation-play-state: paused;
+        transition: .5s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+        animation: txt 20s infinite linear;
+        transition: .5s;
+    }
+
+    &:hover {
+        // animation-play-state: running;
+
+        &::before {
+            // animation-play-state: running;
+            filter: blur(.5vw);
+        }
+    }
+
+    animation: txt 2s linear;
+
+    line-height: 8vw;
+
+}
+
+.titles {
+    width: min-content;
+    display: flex;
+    margin: auto;
+    position: relative;
+    background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+    color: transparent;
+    background-clip: text;
+    overflow: hidden;
+    animation: txt 30s infinite linear;
+
+    span {
+        font-family: "Protest Guerrilla", sans-serif;
+        text-transform: uppercase;
+        font-size: 7.8vw;
+        // color: transparent;
+        // color: inherit;
+        line-height: 8vw;
+        display: block;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+        animation: txt 20s infinite linear;
+        transition: .5s;
+    }
+}

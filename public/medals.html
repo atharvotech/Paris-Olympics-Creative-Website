@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medals</title>
+    <!-- loder -->
+    <link rel="stylesheet" href="css/load.css">
+    <script src="./js/load.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- libs -->
+    <link rel="stylesheet" href="./libs/shery.css">
+    <link rel="stylesheet" href="./libs/locomotive.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- boilerplate style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- home style -->
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #000000;
+        }
+
+        .table img {
+            width: 30px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <div id="topheading">
+            <h5 class="reveal">Design Chaimpionship</h5>
+            <h5 class="reveal">&copy; 2024</h5>
+        </div>
+
+        <h1 class="reveal"><span>Paris </span> <span>Olympics </span> <span>2024 </span> </h1>
+        <div id="green"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo mask navcl">
+                <img src="./favicon.ico" alt="" srcset="">
+                <a href="/">Paris Olympics-2024</a>
+            </div>
+            <div class="menu disp navcl" onclick="navtl.play()"><i class="ri-menu-2-line"></i>Menu</div>
+            <ul>
+                <div class="close disp" onclick="navtl.reverse()"><i class="ri-close-large-line"></i>Close</div>
+                <li class="disp"><a href="/">Home</a></li>
+                <li class="disp"><a href="/events">Events</a></li>
+                <li class="disp"><a href="/athletes">Athlete Profiles</a></li>
+                <li class="active disp"><a href="">Medals</a></li>
+
+                <li class="disp"><a href="/history">History</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main" onclick="navtl.reverse()" data-scroll-container>
+        <div class="table">
+            <h1 style="text-align: center; width: max-content;" class="titles">Olympics Medal Table</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Gold</th>
+                        <th>Silver</th>
+                        <th>Bronze</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/us.png" alt="United States"> United States</td>
+                        <td>40</td>
+                        <td>44</td>
+                        <td>42</td>
+                        <td>126</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/cn.png" alt="China"> China</td>
+                        <td>40</td>
+                        <td>27</td>
+                        <td>24</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/jp.png" alt="Japan"> Japan</td>
+                        <td>20</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/au.png" alt="Australia"> Australia</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>16</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/fr.png" alt="France"> France</td>
+                        <td>16</td>
+                        <td>26</td>
+                        <td>22</td>
+                        <td>64</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/nl.png" alt="Netherlands"> Netherlands</td>
+                        <td>15</td>
+                        <td>7</td>
+                        <td>12</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/gb.png" alt="Great Britain"> Great Britain</td>
+                        <td>14</td>
+                        <td>22</td>
+                        <td>29</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/kr.png" alt="South Korea"> South Korea</td>
+                        <td>13</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/it.png" alt="Italy"> Italy</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>15</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/de.png" alt="Germany"> Germany</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>8</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/nz.png" alt="New Zealand"> New Zealand</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ca.png" alt="Canada"> Canada</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/uz.png" alt="Uzbekistan"> Uzbekistan</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/hu.png" alt="Hungary"> Hungary</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/es.png" alt="Spain"> Spain</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/se.png" alt="Sweden"> Sweden</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ke.png" alt="Kenya"> Kenya</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/no.png" alt="Norway"> Norway</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ie.png" alt="Ireland"> Ireland</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/br.png" alt="Brazil"> Brazil</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ir.png" alt="Iran"> Iran</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ua.png" alt="Ukraine"> Ukraine</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ro.png" alt="Romania"> Romania</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ge.png" alt="Georgia"> Georgia</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/be.png" alt="Belgium"> Belgium</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/bg.png" alt="Bulgaria"> Bulgaria</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/rs.png" alt="Serbia"> Serbia</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/cz.png" alt="Czechia"> Czechia</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/dk.png" alt="Denmark"> Denmark</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/az.png" alt="Azerbaijan"> Azerbaijan</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/hr.png" alt="Croatia"> Croatia</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/cu.png" alt="Cuba"> Cuba</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/bh.png" alt="Bahrain"> Bahrain</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/si.png" alt="Slovenia"> Slovenia</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/tw.png" alt="Chinese Taipei"> Chinese Taipei</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/at.png" alt="Austria"> Austria</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/hk.png" alt="Hong Kong, China"> Hong Kong, China</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ph.png" alt="Philippines"> Philippines</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/dz.png" alt="Algeria"> Algeria</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/id.png" alt="Indonesia"> Indonesia</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/il.png" alt="Israel"> Israel</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/pl.png" alt="Poland"> Poland</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/kz.png" alt="Kazakhstan"> Kazakhstan</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/jm.png" alt="Jamaica"> Jamaica</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/za.png" alt="South Africa"> South Africa</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/th.png" alt="Thailand"> Thailand</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/et.png" alt="Ethiopia"> Ethiopia</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ch.png" alt="Switzerland"> Switzerland</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ec.png" alt="Ecuador"> Ecuador</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                    <!-- REVIEW -->
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/pt.png" alt="Portugal"> Portugal</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+
+                        <td><img src="https://flagcdn.com/w320/gr.png" alt="Greece"> Greece</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+
+                        <td><img src="https://flagcdn.com/w320/ar.png" alt="Argentina"> Argentina</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/eg.png" alt="Egypt">Egypt </td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr></tr>
+                    <td><img src="https://flagcdn.com/w320/tn.png" alt="Tunisia">Tunisia </td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/bw.png" alt="Botswana"> Botswana</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/cl.png" alt="Chile"> Chile</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/lc.png" alt="Saint Lucia"> Saint Lucia</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ug.png" alt="Uganda"> Uganda</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/do.png" alt="Dominican Republic"> Dominican Republic</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/gt.png" alt="Guatemala"> Guatemala</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ma.png" alt="Morocco"> Morocco</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/dm.png" alt="Dominica"> Dominica</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/pk.png" alt="Pakistan"> Pakistan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/tr.png" alt="Türkiye"> Türkiye</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/mx.png" alt="Mexico"> Mexico</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/am.png" alt="Armenia"> Armenia</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/co.png" alt="Colombia"> Colombia</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/kg.png" alt="Kyrgyzstan"> Kyrgyzstan</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/kp.png" alt="North Korea"> North Korea</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/lt.png" alt="Lithuania"> Lithuania</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/in.png" alt="India"> India</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/md.png" alt="Republic of Moldova"> Republic of Moldova
+                        </td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/xk.png" alt="Kosovo"> Kosovo</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/cy.png" alt="Cyprus"> Cyprus</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/fj.png" alt="Fiji"> Fiji</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/jo.png" alt="Jordan"> Jordan</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/mn.png" alt="Mongolia"> Mongolia</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/pa.png" alt="Panama"> Panama</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/tj.png" alt="Tajikistan"> Tajikistan</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/al.png" alt="Albania"> Albania</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/gd.png" alt="Grenada"> Grenada</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/my.png" alt="Malaysia"> Malaysia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/pr.png" alt="Puerto Rico"> Puerto Rico</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/ci.png" alt="Côte d'Ivoire"> Côte d'Ivoire</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/cv.png" alt="Cape Verde"> Cape Verde</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./favicon.ico" alt="Refugee Olympic Team"> Refugee Olympic Team</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/pe.png" alt="Peru"> Peru</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/qa.png" alt="Qatar"> Qatar</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/sg.png" alt="Singapore"> Singapore</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/sk.png" alt="Slovakia"> Slovakia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://flagcdn.com/w320/zm.png" alt="Zambia"> Zambia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <div class="lnc">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="">
+                    <div class="cn">Paris Olympics - 2024</div>
+                </div>
+                <div class="connect">
+                    Connect:
+                    <i class="ri-facebook-fill disp"></i>
+                    <i class="ri-instagram-line disp"></i>
+                </div>
+            </div>
+            <div class="cred">
+                <span class="">Designed By Atharv Shukla ,Dark Coders</span>
+                <span class="flink">
+                    <span><a href="" class="disp">Documentation</a></span>
+                    <span><a href="" class="disp">Google Drive</a></span>
+                </span>
+            </div>
+            <div class="copy mask" onclick="mtl.play()">
+                &copy; 2024 Paris Olympics. All rights reserved. Disclamer
+            </div>
+        </footer>
+
+    </div>
+    <div class="modal">
+        <div class="modal-content"></div>
+        <span class="close" onclick="mtl.reverse()">&times;</span>
+        <div class="mhead one">Copyright Credits</div>
+        <div class="mdata">Image Source:
+            <a href="https://olympics.com/">Olympics Official</a>
+        </div>
+
+        <div class="mdata">article:
+            <a href="https://wikipedia.com/">wikipedia</a>
+        </div>
+
+        <div class="mhead two">
+            ⚠️ Disclamer
+        </div>
+        <p>This website is for educational purposes only. This website provided is not official and may not reflect
+            the
+            actual outcome of the Paris 2024 Olympics.</p>
+    </div>
+    <!-- gsap -->
+    <script src="./libs/gsap.min.js"></script>
+    <!-- libs -->
+    <script src="./libs/locomotive-scroll.min.js"></script>
+    <script src="./libs/scrollTrigger.min.js"></script>
+    <script src="./libs/three.min.js"></script>
+    <script src="./libs/controlKit.min.js"></script>
+    <script src="./libs/shery.min.js"></script>
+    <!-- Default Script -->
+    <script src="./js/script.js"></script>
+    <!-- Home Script -->
+    <script>
+        function cusAnim() {
+            let h1 = document.querySelector(".titles")
+            function breakText(e) {
+                let sp = document.querySelector(e)
+                let h1txt = sp.innerText
+
+                let splittedText = h1txt.split('');
+                let halfValue = splittedText.length / 2
+
+                let clutter = ""
+
+                splittedText.forEach((e, i) => {
+                    console.log(e, i);
+                    if (e == " ") {
+                        e = '&nbsp;'
+                    }
+
+                    if (i < halfValue) {
+                        clutter += `<span class="a">${e}</span>`
+                    }
+                    else {
+                        clutter += `<span class="b">${e}</span>`
+                    }
+                });
+
+                sp.innerHTML = clutter
+            }
+            var md = document.querySelector('.table .titles')
+            breakText('.table .titles')
+
+
+            let as = document.querySelectorAll(".a");
+            let bs = document.querySelectorAll(".b");
+
+            loadtl.from('.titles', {
+                scaleX: 0,
+            })
+
+            loadtl.from(h1.querySelectorAll('.a'), {
+                y: "100%",
+                opacity: 0,
+                duration: .6,
+                stagger: 0.15,
+            }, 'gp')
+
+            loadtl.from(h1.querySelectorAll('.b'), {
+                y: "100%",
+                opacity: 0,
+                duration: .6,
+                stagger: -0.15,
+            }, 'gp')
+            loadtl.from('.table table', {
+                scaleX: 0,
+                ease: Circ.easeInOut,
+            })
+
+            let medli = document.querySelectorAll('table tr')
+
+            Array.from(medli).forEach(e => {
+                gsap.from(e, {
+                    opacity: 0,
+                    scale: 0,
+                    duration: 1,
+                    ease: 'back.out(2)',
+                    scrollTrigger: {
+                        trigger: e,
+                        scroller: "#main",
+                        start: "top 85%",
+                        end: "top 70%",
+                        scrub: 1,
+                    }
+                })
+            })
+
+
+        }
+    </script>
+</body>
+
+</html>

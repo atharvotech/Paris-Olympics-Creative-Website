@@ -1,0 +1,114 @@
+.spContainer {
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5vw 0;
+
+    .spCard {
+        width: 40%;
+        position: relative;
+        overflow: hidden;
+        margin: 2vw 0px;
+        border-radius: 20px;
+        background-color: #212121;
+        box-shadow: 0px 0px 10px black;
+
+        &:hover {
+            .spDets {
+                top: 0%;
+                opacity: 1;
+                font-size: 2vw;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .spDets {
+            padding: .4vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1vw;
+            justify-content: center;
+            font-size: 1.2vw;
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            opacity: 0;
+            background-color: rgba(198, 198, 198, 0.303);
+            backdrop-filter: blur(10px);
+            transition: .5s;
+            z-index: 1;
+
+            .gl i {
+                color: gold;
+            }
+
+            .sl i {
+                color: silver;
+            }
+
+            .br i {
+                color: rgb(149, 107, 0);
+            }
+
+            i {
+                text-shadow: 0px 0px 6px black;
+            }
+
+            div {
+                text-shadow: 0px 0px 3px black;
+
+            }
+        }
+
+        .spTitle {
+            font-size: 1.5vw;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+.head {
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 4vw;
+    text-align: center;
+    width: max-content;
+    // line-height: 1.4;
+    line-height: normal;
+
+    &::after{
+        height: .3vw;
+    }
+}
+
+.unCard {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 20px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px black;
+}
+
+.unName {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.unSp,
+.unSt {
+    margin-top: 8px;
+}
+
+.unSt:not(b) {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}

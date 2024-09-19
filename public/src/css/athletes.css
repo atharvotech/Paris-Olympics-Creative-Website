@@ -1,0 +1,213 @@
+@import url();
+#lmain {
+  height: 100%;
+}
+
+.heading {
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Monotype Corsiva";
+  font-size: 4vw;
+  line-height: 4.9vw;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 100;
+  text-underline-offset: 5px;
+  overflow: hidden;
+  cursor: url(./images/hero1.jpg);
+  cursor: default;
+}
+.heading::after {
+  height: 0.4vw;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: gilroy; */
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: #fff; */
+  padding: 100px 0;
+  gap: 80px;
+  cursor: default;
+}
+
+.container .card {
+  position: relative;
+  width: 24vw;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+  transition: 0.5s;
+  background-color: #212121;
+  box-shadow: 0px 0px 10px black;
+}
+
+.container .card:hover {
+  height: 350px;
+}
+
+.container .card .imgbx {
+  position: absolute;
+  inset: 20px 20px 50px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.container .card:hover .imgbx {
+  inset: -50px 60px 250px 60px;
+  box-shadow: 0 0 0 10px #111;
+}
+
+.container .card .imgbx::before {
+  content: " ";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: 11;
+  background-color: transparent;
+  left: -30px;
+  border-top-right-radius: 20px;
+  transform: translateY(-100px);
+  opacity: 0;
+  box-shadow: 5px -5px 0 4px #111;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgbx::before {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+.container .card .imgbx::after {
+  content: " ";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: 11;
+  background-color: transparent;
+  right: -30px;
+  border-top-left-radius: 20px;
+  transform: translateY(-100px);
+  opacity: 0;
+  box-shadow: -5px -5px 0 4px #111;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgbx::after {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+.container .card .imgbx img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: 13;
+  border-radius: 15px;
+}
+
+.container .card p {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50px);
+  transition: 0.5s;
+  font-size: 0.9vw;
+}
+
+.container .card:hover p {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(40px);
+}
+
+.container .card h2 {
+  position: absolute;
+  bottom: 8px;
+  color: #f3f3f3;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.container .card:hover h2 {
+  background-color: green;
+  bottom: -25px;
+  padding: 5px 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 0 10px #111;
+}
+
+.unCard {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px black;
+}
+
+.unName {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.unSp,
+.unSt {
+  margin-top: 8px;
+}
+
+.unSt:not(b) {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 5vw 4%;
+  }
+  .container .card {
+    width: 40%;
+  }
+  .container .card p {
+    padding: 0px 0.5vw;
+    font-size: 2vw;
+  }
+  .container .card:hover {
+    height: 320px;
+  }
+}
+@media (max-width: 430px) {
+  .container .card {
+    width: 90%;
+  }
+}/*# sourceMappingURL=athletes.css.map */

@@ -1,0 +1,308 @@
+@import "var";
+
+.hero-container {
+
+    width: 100%;
+    height: 100vh;
+    // height: calc(100vh - 4vw);
+    // background-color: red;
+    cursor: pointer;
+    position: relative;
+    // background-color: red;
+    overflow: hidden;
+
+    .hero-imgs {
+        overflow: hidden;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+.wrap {
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-color: $bgcolor;
+    cursor: pointer;
+}
+
+.wrap-cover {
+    transform: translate(0);
+    z-index: 10;
+    margin-bottom: 2.4vw;
+}
+
+.slogan {
+    font-size: 2.5vw;
+    font-family: 'Monotype Corsiva';
+    line-height: 3vw;
+    padding: 0 10%;
+    margin-top: 2.5vw;
+    position: relative;
+    margin-bottom: 4vw;
+
+}
+
+.sports {
+    margin-top: 3vw;
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: 2vw;
+        margin-top: 1vw;
+        padding: .1vw 7vw;
+        letter-spacing: .1vw;
+    }
+
+    ul {
+        list-style-position: outside;
+        list-style-type: disc;
+        margin: .1vw 7vw;
+
+    }
+
+    .head {
+        font-family: 'Lucida calligraphy';
+        font-size: 2.5vw;
+        margin: 0 5vw;
+        margin-top: 4vw;
+    }
+
+    .spContainer {
+        // width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 4vw 0vw;
+        margin: 0 5vw;
+
+        .spCard {
+            width: 30%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #212121;
+            box-shadow: 0px 0px 10px black;
+
+            &:hover {
+                .spDets {
+                    top: 0%;
+                    opacity: 1;
+                    font-size: 2vw;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .spDets {
+                padding: .4vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1vw;
+                justify-content: center;
+                font-size: 1.2vw;
+                position: absolute;
+                inset: 0;
+                top: 50%;
+                opacity: 0;
+                background-color: rgba(198, 198, 198, 0.303);
+                backdrop-filter: blur(10px);
+                transition: .5s;
+                z-index: 1;
+
+                .gl i {
+                    color: gold;
+                }
+
+                .sl i {
+                    color: silver;
+                }
+
+                .br i {
+                    color: rgb(149, 107, 0);
+                }
+
+                i {
+                    text-shadow: 0px 0px 6px black;
+                }
+
+                div {
+                    text-shadow: 0px 0px 3px black;
+
+                }
+            }
+
+            .spTitle {
+                font-size: 1.5vw;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.lm-btn {
+    width: min-content;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 1.5vw;
+    border-radius: 3.5vw;
+    box-shadow: 0px 0px 10px black;
+    line-height: 1;
+    margin: auto;
+
+    .lm {
+        a {
+            background-color: #fff;
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(to right, #0081C8, #FCB131, #00A651, #EE334E, #0081C8);
+            animation: txt 30s infinite linear;
+            width: max-content;
+            position: relative;
+            transform: translateX(0);
+            z-index: 2;
+            animation: txt 20s linear;
+            animation-play-state: paused;
+            margin: auto;
+            font-size: 1.7vw;
+            color: transparent;
+            background-clip: text;
+            line-height: 1.5 !important;
+
+            &:hover {
+                animation-play-state: running;
+                cursor: pointer;
+            }
+
+
+            line-height: 8vw;
+        }
+    }
+}
+
+
+.athletes {
+    margin-top: 3vw;
+
+    h1 {
+        text-align: center;
+        margin-top: 2.5vw;
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: 2vw;
+        margin-top: 1vw;
+        padding: .1vw 7vw;
+        letter-spacing: .1vw;
+    }
+
+    ul {
+        list-style-position: outside;
+        list-style-type: disc;
+        margin: .1vw 7vw;
+
+    }
+
+    .athContainer {
+        // width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 4vw 0vw;
+        margin: 0 5vw;
+
+        .athCard {
+            width: 30%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #212121;
+            box-shadow: 0px 0px 10px black;
+
+            &:hover {
+                .athDets {
+                    top: 0%;
+                    opacity: 1;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .athDets {
+                padding: .4vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1vw;
+                justify-content: center;
+                font-size: 1.2vw;
+                position: absolute;
+                inset: 0;
+                top: 50%;
+                opacity: 0;
+                background-color: rgba(198, 198, 198, 0.303);
+                backdrop-filter: blur(10px);
+                transition: .5s;
+                z-index: 1;
+
+                .gl i {
+                    color: gold;
+                }
+
+                .sl i {
+                    color: silver;
+                }
+
+                .br i {
+                    color: rgb(149, 107, 0);
+                }
+
+                i {
+                    text-shadow: 0px 0px 6px black;
+                }
+
+                div {
+                    text-shadow: 0px 0px 3px black;
+
+                }
+            }
+
+            .athName {
+                font-size: 1.5vw;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+}
+
