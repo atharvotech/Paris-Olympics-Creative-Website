@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dc-project.onrender.com/</loc>
+    <loc>https://dc-project.onrender.com/home</loc>
     <lastmod>2024-09-21</lastmod>
   </url>
+  <url>
+    <loc>https://dc-project.onrender.com/events</loc>
+    <lastmod>2024-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://dc-project.onrender.com/atheletes</loc>
+    <lastmod>2024-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://dc-project.onrender.com/medals</loc>
+    <lastmod>2024-09-21</lastmod>
+  </url>
+
+   <url>
+    <loc>https://dc-project.onrender.com/history</loc>
+    <lastmod>2024-09-21</lastmod>
+  </url>
+  
+
 </urlset>
