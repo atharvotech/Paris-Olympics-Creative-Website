@@ -56,7 +56,7 @@ function content(){
     ];
 
     // let imgs = ['hero4.jpg', 'hero1.jpg', 'hero2.jpg', 'hero6.jpg','hockey.jpg','hero5.jpg','avni.jpg','sumit.jpg','','','y.jpg','Shital.jpg']
-    let imgs = ['hero4.jpg', 'hero1.jpg', 'hero2.jpg', 'hero6.jpg','hockey.jpg','hero5.jpg','avni.jpg','sumit.jpg','navdeep.jpg','praveen.jpg','y.jpg','Shital.jpg']
+    let imgs = ['hero4.jpg', 'hero1.jpg', 'hero2.jpg', 'hero6.jpg','hockey.jpg','hero5.jpg','avni.jpg','sumit.jpg','navdeep.jpg','praveen.jpg','y.jpg','shital.jpg']
 
     var clutter = ''
     for (let i = 0; i < names.length; i++) {
