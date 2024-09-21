@@ -39,10 +39,10 @@ app.get('/test', (req, res) => {
 })
 
 //for css and js files
-app.use(express.static('../public/src'))
+app.use(express.static('public/src'))
 
 //for images and other files
-app.use(express.static('../public/assets'))
+app.use(express.static('public/assets'))
 
 app.listen(port, () => {
     console.log(`server listening on http://localhost:${port}/)`);
