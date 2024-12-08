@@ -44,6 +44,10 @@ app.use(express.static('public/src'))
 //for images and other files
 app.use(express.static('public/assets'))
 
+app.get('/sitemap', (req, res) => {
+    res.sendFile(path.join(__dirname, 'sitemap.xml'))
+})
+
 app.listen(port, () => {
     console.log(`server listening on http://localhost:${port}/)`);
 })
