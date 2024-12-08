@@ -45,7 +45,7 @@ app.use(express.static('public/src'))
 app.use(express.static('public/assets'))
 
 app.get('/sitemap', (req, res) => {
-    res.sendFile(path.join(__dirname, 'sitemap.xml'))
+    res.sendFile('sitemap.xml')
 })
 
 app.listen(port, () => {
