@@ -5,6 +5,7 @@ const port = 3005;
 //home page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    console.log(path.join(__dirname, 'public', 'index.html'))
 }).get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
@@ -45,7 +46,8 @@ app.use(express.static('public/src'))
 app.use(express.static('public/assets'))
 
 app.get('/sitemap', (req, res) => {
-    res.sendFile('sitemap.xml')
+    res.sendFile(path.join(__dirname, 'sitemap.xml'))
+    console.log(path.join(__dirname, 'sitemap.xml')
 })
 
 app.listen(port, () => {
