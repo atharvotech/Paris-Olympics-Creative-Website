@@ -1,6 +1,0 @@
-User-agent: Googlebot
-
-User-agent: *
-Allow: /
-
-Sitemap:  https://dc-project.onrender.com/sitemap.xml
