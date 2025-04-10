@@ -52,7 +52,7 @@ function cusAnim() {
         y: 100,
         duration: 1,
         ease: "power2.out",
-        srub: 2,
+        scrub: 2,
         delay: (i) => i * 0.1,
         scrollTrigger: {
             trigger: '.slogan',
