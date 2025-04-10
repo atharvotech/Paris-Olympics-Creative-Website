@@ -35,7 +35,7 @@ function load() {
 
     loadtl.to('#loader', {
         height: 0,
-        duartion: .5,
+        duration: .5,
         ease: Circ.easeInOut,
     })
 
@@ -43,7 +43,7 @@ function load() {
         height: '100vh',
         top: 0,
         delay: -.25,
-        duartion: .7,
+        duration: .7,
         ease: Circ.easeInOut,
     })
     loadtl.to('#green', {
@@ -58,7 +58,7 @@ function load() {
     })
 
     loadtl.to('#loader',{
-        duartion:0,
+        duration:0,
         display:'none',
     })
 
