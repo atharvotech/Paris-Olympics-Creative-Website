@@ -1,7 +1,7 @@
 # Paris Olympics - 2024
- the motive of designing the project is design championship 2024 and to make people aware the power of creative coding with gsap three.js and many more to show that Indians can also make attractive website if a class 8th student can makeit.
+ The motive for designing the project is the Design Championship 2024 and to make people aware of the power of creative coding with GSAP three.js and many more to show that Indians can also make attractive websites if a class 8th student can make it.
 
-#How to run?
+# How to run?
 `npm i`
 `npm run dev`
 
